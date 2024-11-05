@@ -19,6 +19,7 @@
 ✔️ Projects\
 ✔️ Contact me
 
+
 ## Installation & Deployment 📦
 - Clone the repository and modify the content of <b>index.html</b> according to your requirement.
 - ⚠️ Remove my Bitmoji <img src="https://github.com/vinodjangid07/vinodjangid07.github.io/assets/86096184/05e5b2d6-8b38-4cf9-a5a3-eb63e81aab1d" width="20px"> from the navbar/footer and use yours instead.⚠️
