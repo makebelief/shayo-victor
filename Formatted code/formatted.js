@@ -1,18 +1,4 @@
-//  
-// ██╗░░░██╗██╗███╗░░██╗░█████╗░██████╗░
-// ██║░░░██║██║████╗░██║██╔══██╗██╔══██╗
-// ╚██╗░██╔╝██║██╔██╗██║██║░░██║██║░░██║
-// ░╚████╔╝░██║██║╚████║██║░░██║██║░░██║
-// ░░╚██╔╝░░██║██║░╚███║╚█████╔╝██████╔╝
-// ░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚════╝░╚═════╝░
-// ░░░░░██╗░█████╗░███╗░░██╗░██████╗░██╗██████╗░
-// ░░░░░██║██╔══██╗████╗░██║██╔════╝░██║██╔══██╗
-// ░░░░░██║███████║██╔██╗██║██║░░██╗░██║██║░░██║
-// ██╗░░██║██╔══██║██║╚████║██║░░╚██╗██║██║░░██║
-// ╚█████╔╝██║░░██║██║░╚███║╚██████╔╝██║██████╔╝
-// ░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝╚═════╝░
 
-// preloader script............
 var audio = document.getElementById("audioPlayer");
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
@@ -20,9 +6,7 @@ window.addEventListener("load", function () {
   document.querySelector('.hey').classList.add('popup');
 })
 
-// preloader script ends here.........
 
-// switch for setting
 function settingtoggle(){
   document.getElementById("setting-container").classList.toggle('settingactivate');
   document.getElementById("visualmodetogglebuttoncontainer").classList.toggle('visualmodeshow');
@@ -49,7 +33,7 @@ function playpause() {
   }
 let emptyArea = document.getElementById("emptyarea");
  let mobileTogglemenu = document.getElementById("mobiletogglemenu");
-// toggle menu by clicking on hamburger
+
 function hamburgerMenu() {
     document.body.classList.toggle("stopscrolling");
  document.getElementById("mobiletogglemenu").classList.toggle("show-toggle-menu");
@@ -57,7 +41,7 @@ document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
 document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
 document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
 }
-// close mobile toggle menu by clicking on LI
+
 function hidemenubyli(){
 document.body.classList.toggle("stopscrolling");
 document.getElementById("mobiletogglemenu").classList.remove("show-toggle-menu");
@@ -117,10 +101,7 @@ function scrolltoTopfunction(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-// document.addEventListener("contextmenu", function (e){
-//   e.preventDefault();
-// }, false);
-// https://github.com/vinodjangid07
+
 document.addEventListener("contextmenu", function(e){
   if (e.target.nodeName === "IMG") {
       e.preventDefault();
@@ -137,14 +118,13 @@ let pupilStartPoint = -10;
 let pupilRangeX = 20;
 let pupilRangeY = 15;
 
-// mouse X 
+
 let mouseXStartPoint = 0;
 let mouseXEndPoint = window.innerWidth;
 let currentXPosition = 0;
 let fracXValue = 0;
 
 
-// mouse Y position 
 let mouseYEndPoint = window.innerHeight;
 let currentYPosition = 0;
 let fracYValue = 0;
@@ -158,11 +138,11 @@ const mouseMove = (event) => {
     currentYPosition = event.clientY;
     fracYValue = currentYPosition / mouseYEndPoint;
  
-    // footer
+    
     let pupilXCurrrentPosition = pupilStartPoint + (fracXValue * pupilRangeX);
     let pupilYCurrrentPosition = pupilStartPoint + (fracYValue * pupilRangeY);
 
-    // footer
+   
     pupilsArr.forEach((curPupil) => {
       curPupil.style.transform= `translate(${pupilXCurrrentPosition}px, ${pupilYCurrrentPosition}px)`;
   })
