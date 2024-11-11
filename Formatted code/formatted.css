@@ -1982,13 +1982,3 @@ transition-duration: 1s;
         gap: 20px;
     }
   }
-  /* https://github.com/vinodjangid07 */
-  /* responsive code above */
-/*   
-
-  @media screen and (min-height: 900px) and (max-width: 600px) {
-
-    .text-content{
-        justify-content: flex-start;
-    }
-  } */
